@@ -1,0 +1,113 @@
+.contact-section {
+  padding: 45px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) { .contact-section { padding: 45px 0; } }
+
+/* ===== Gradient blur orbs ===== */
+.contact-glow {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(80px);
+  opacity: 0.18;
+}
+
+.contact-glow-left {
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, var(--color-pink-deep), transparent 70%);
+  top: -60px; left: -100px;
+}
+
+.contact-glow-right {
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, #6c8ebf, transparent 70%);
+  bottom: -80px; right: -120px;
+}
+
+.contact-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 580px;
+}
+
+.contact-eyebrow { color: var(--color-pink); }
+.contact-eyebrow::before { background: var(--color-pink); }
+
+/* ===== Flow layout ===== */
+.contact-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-lg);
+  margin: var(--space-xl) 0 var(--space-3xl);
+}
+
+.contact-headline {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 6.5vw, 72px);
+  font-weight: 900;
+  color: var(--color-text-on-dark-heading);
+  letter-spacing: -0.03em;
+  line-height: 1.04;
+}
+
+.contact-arrow {
+  display: flex;
+  align-items: center;
+  color: rgba(246, 242, 233, 0.3);
+  animation: contact-bounce 2s ease-in-out infinite;
+}
+
+@keyframes contact-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
+}
+
+.contact-tagline {
+  font-size: clamp(22px, 3.5vw, 34px);
+  font-weight: 700;
+  font-family: var(--font-display);
+  color: var(--color-text-on-dark);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.contact-tagline em {
+  font-style: normal;
+  color: var(--color-pink);
+}
+
+.contact-subtext {
+  font-size: 15.5px;
+  line-height: 1.75;
+  color: var(--color-text-on-dark);
+  margin-top: var(--space-base);
+  margin-bottom: 30px;
+  max-width: 480px;
+  opacity: 0.85;
+}
+
+/* ===== Action buttons ===== */
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  position: relative;
+  z-index: 1;
+}
+
+.contact-actions .btn { min-width: 130px; }
+.contact-actions .btn svg { flex-shrink: 0; }
+
+@media (max-width: 640px) {
+  .contact-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact-actions .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,76 @@
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3xl);
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-lg);
+}
+
+.about-text p:last-child { margin-bottom: 0; }
+
+.about-text strong {
+  color: var(--color-text);
+  font-weight: 700;
+  background: linear-gradient(to top, var(--color-pink) 38%, transparent 38%);
+  padding: 0 2px;
+}
+
+/* Stats — vertical strip with quiet dividers, deliberately not a card grid */
+.about-stats {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--color-border);
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-base);
+  padding: 26px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.stat-value {
+  font-family: var(--font-display);
+  font-size: 35px;
+  font-weight: 800;
+  color: var(--color-ink);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 14.5px;
+  color: var(--color-text-secondary);
+  text-align: right;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .about-layout {
+    grid-template-columns: 1.15fr 1fr;
+    gap: var(--space-5xl);
+    align-items: stretch;
+  }
+  .about-layout > .scroll-reveal {
+    height: 100%;
+  }
+  .about-stats {
+    position: sticky;
+    top: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .stat-item {
+    flex: 1;
+    padding: 0;
+  }
+}
