@@ -46,7 +46,7 @@ export default function Hero() {
               }}>
                 See my work
               </a>
-              <a href="#" className="btn btn-secondary btn-lg" download>
+              <a href="https://drive.google.com/file/d/1hogOoiF6IEQ1dhv8EMC57IvkFPaWLOrN/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn btn-secondary btn-lg">
                 Download CV
               </a>
             </div>
