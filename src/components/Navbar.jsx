@@ -45,36 +45,38 @@ export default function Navbar() {
   }
 
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} role="navigation" aria-label="Main navigation">
-      <div className="container navbar-inner">
-        <a href="#home" className="navbar-logo" onClick={(e) => { e.preventDefault(); handleClick('home') }}>
-          Nabilla<span>.</span>
-        </a>
+    <>
+      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} role="navigation" aria-label="Main navigation">
+        <div className="container navbar-inner">
+          <a href="#home" className="navbar-logo" onClick={(e) => { e.preventDefault(); handleClick('home') }}>
+            Nabilla<span>.</span>
+          </a>
 
-        <div className="navbar-links">
-          {NAV_ITEMS.map(item => (
-            <a
-              key={item.id}
-              href={`#${item.id}`}
-              className={`navbar-link ${activeSection === item.id ? 'active' : ''}`}
-              onClick={(e) => { e.preventDefault(); handleClick(item.id) }}
-            >
-              {item.label}
-            </a>
-          ))}
+          <div className="navbar-links">
+            {NAV_ITEMS.map(item => (
+              <a
+                key={item.id}
+                href={`#${item.id}`}
+                className={`navbar-link ${activeSection === item.id ? 'active' : ''}`}
+                onClick={(e) => { e.preventDefault(); handleClick(item.id) }}
+              >
+                {item.label}
+              </a>
+            ))}
+          </div>
+
+          <button
+            className={`navbar-hamburger ${isOpen ? 'open' : ''}`}
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label={isOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={isOpen}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
-
-        <button
-          className={`navbar-hamburger ${isOpen ? 'open' : ''}`}
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label={isOpen ? 'Close menu' : 'Open menu'}
-          aria-expanded={isOpen}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+      </nav>
 
       <div className={`navbar-mobile ${isOpen ? 'open' : ''}`}>
         {NAV_ITEMS.map(item => (
@@ -88,6 +90,6 @@ export default function Navbar() {
           </a>
         ))}
       </div>
-    </nav>
+    </>
   )
 }

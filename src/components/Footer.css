@@ -37,7 +37,7 @@
 .footer-giant {
   font-family: var(--font-display);
   font-weight: 900;
-  font-size: clamp(70px, 16vw, 230px);
+  font-size: clamp(40px, 16vw, 230px);
   line-height: 0.82;
   letter-spacing: -0.04em;
   color: var(--color-text-on-dark-heading);
@@ -51,7 +51,18 @@
 
 .footer-copyright {
   font-size: 13px;
-  color: var(--color-text-tertiary);
+  color: var(--color-text-on-dark);
   text-align: center;
-  opacity: 0.6;
+  opacity: 0.45;
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-lg);
+  }
+  .footer-links {
+    justify-content: center;
+  }
 }

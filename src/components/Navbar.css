@@ -60,6 +60,7 @@
   padding: var(--space-xl);
   animation: slideDown 0.3s ease-out;
   z-index: 999;
+  overflow-y: auto;
 }
 
 .navbar-mobile.open { display: flex; flex-direction: column; gap: 4px; }
