@@ -5,7 +5,7 @@ import './Projects.css'
 const FEATURED_PROJECTS = [
   {
     title: 'SiDoku',
-    description: 'Business management web application for small and medium-sized businesses, featuring product, inventory, expense, and financial management. Developed the responsive front-end using React.',
+    description: 'Full-stack business management application built with a React.js frontend, REST API integration, database-driven workflows, and AI-based forecasting features for product, inventory, expense, and financial management.',
     image: '/projects/sidoku.png',
     tags: ['React', 'JavaScript', 'Tailwind CSS', 'Axios'],
     demo: 'https://sidoku.vercel.app',
@@ -13,7 +13,7 @@ const FEATURED_PROJECTS = [
   },
   {
     title: 'NovaEdge',
-    description: 'Modern and responsive agency website template built with HTML, CSS, and JavaScript. Designed for startups and service businesses with multi-page layouts, dark mode, and interactive user experiences.',
+    description: 'Web application development project focused on a modern, responsive interface built with HTML, CSS, and JavaScript for startups and service businesses. Designed to deliver a polished frontend experience across multiple pages.',
     image: '/projects/novaedge.png',
     tags: ['HTML5', 'CSS3', 'JavaScript'],
     demo: 'https://novaedge-template.vercel.app/',
@@ -21,7 +21,7 @@ const FEATURED_PROJECTS = [
   },
   {
     title: 'Pretty Things',
-    description: 'Mobile e-commerce application for fashion accessories with user authentication, product catalog, and CRUD product management. Built with Flutter using a structured, component-based architecture.',
+    description: 'Frontend implementation for a fashion accessories commerce application, translating UI/UX requirements into a responsive product experience with user authentication, product catalog, and CRUD management.',
     image: '/projects/pretty-things.png',
     tags: ['Flutter', 'Dart', 'Mock API'],
     demo: '',

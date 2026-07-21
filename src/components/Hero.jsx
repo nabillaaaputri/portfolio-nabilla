@@ -20,9 +20,9 @@ export default function Hero() {
         </div>
 
         <h1 className="hero-headline">
-          <span className="hero-headline-line">WEB</span>
+          <span className="hero-headline-line">SOFTWARE</span>
           <span className="hero-headline-line hero-headline-line-photo">
-            DEVELOPER
+            ENGINEER
             <span className="hero-inline-photo">
               <img src="/nabilla-photo.png" alt="Nabilla Putri Nuraini" />
             </span>
@@ -35,8 +35,8 @@ export default function Hero() {
               <span className="hero-name">Nabilla Putri Nuraini</span>
               <span className="hero-dot" aria-hidden="true">•</span>
               <span className="hero-subtitle">
-  Informatics Student, Universitas Sultan Ageng Tirtayasa
-</span>
+                Informatics Student | Frontend Developer | Web Developer | Full-stack Enthusiast
+              </span>
             </div>
 
             <div className="hero-actions">
@@ -44,16 +44,13 @@ export default function Hero() {
                 e.preventDefault()
                 document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
               }}>
-                See my work
-              </a>
-              <a href="https://drive.google.com/file/d/1hogOoiF6IEQ1dhv8EMC57IvkFPaWLOrN/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn btn-secondary btn-lg">
-                Download CV
+                See my projects
               </a>
             </div>
           </div>
 
           <p className="hero-description">
-            Informatics student passionate about building responsive and user-friendly web applications using React, PHP, JavaScript, and modern web technologies. Eager to learn, collaborate, and contribute to real-world software development projects.
+            Informatics student with experience building web applications, RESTful APIs, and AI-integrated systems using modern technologies. Comfortable working across frontend development, backend integration, and full-stack product development.
           </p>
         </div>
       </div>

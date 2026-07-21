@@ -16,7 +16,7 @@ export default function Footer() {
       <div className="footer-giant" aria-hidden="true">NABILLA</div>
 
       <div className="container footer-bottom">
-        <p className="footer-copyright">&copy; 2026 Nabilla Putri Nuraini. Last updated June 2026.</p>
+        <p className="footer-copyright">&copy; 2026 Nabilla Putri Nuraini. Last updated July 2026.</p>
       </div>
     </footer>
   )

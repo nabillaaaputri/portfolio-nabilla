@@ -10,8 +10,17 @@ const CERTIFICATES = [
     year: '2024',
     accent: 'gold',
     credentialUrl: '#',
-    category: 'Scholarship',
+    category: 'Academic Award',
     image: '/certificates/bsi-scholarship.jpg',
+  },
+  {
+    title: 'Coding Camp 2026 Certificate',
+    issuer: 'DBS Foundation & Dicoding',
+    year: '2026',
+    accent: 'primary',
+    credentialUrl: '/certificates/%5BCoding%20Camp%202026%5D%20Certificate%20-%20CFCC318D6X2274.pdf',
+    pdfUrl: '/certificates/%5BCoding%20Camp%202026%5D%20Certificate%20-%20CFCC318D6X2274.pdf',
+    category: 'Full-Stack Development',
   },
   {
     title: 'Oracle Cloud Infrastructure Foundations I & II – DTS',
@@ -19,17 +28,8 @@ const CERTIFICATES = [
     year: '2024',
     accent: 'primary',
     credentialUrl: '#',
-    category: 'Cloud',
+    category: 'Cloud Infrastructure',
     image: '/certificates/oracle-dts.png',
-  },
-  {
-    title: 'Belajar Fundamental Aplikasi Web dengan React',
-    issuer: 'Dicoding Indonesia',
-    year: '2026',
-    accent: 'secondary',
-    credentialUrl: '#',
-    category: 'Frontend',
-    image: '/certificates/react-fundamental.png',
   },
   {
     title: 'Belajar Membuat Aplikasi Web dengan React',
@@ -37,17 +37,17 @@ const CERTIFICATES = [
     year: '2026',
     accent: 'secondary',
     credentialUrl: '#',
-    category: 'Frontend',
+    category: 'Frontend Development',
     image: '/certificates/react-web.png',
   },
   {
-    title: 'Belajar Membuat Front-End Web untuk Pemula',
+    title: 'Belajar Fundamental Aplikasi Web dengan React',
     issuer: 'Dicoding Indonesia',
     year: '2026',
     accent: 'secondary',
     credentialUrl: '#',
-    category: 'Frontend',
-    image: '/certificates/frontend-beginner.png',
+    category: 'Frontend Development',
+    image: '/certificates/react-fundamental.png',
   },
   {
     title: 'Belajar Fundamental Back-End dengan JavaScript',
@@ -55,7 +55,7 @@ const CERTIFICATES = [
     year: '2026',
     accent: 'primary',
     credentialUrl: '#',
-    category: 'Backend',
+    category: 'Backend Development',
     image: '/certificates/backend-fundamental.png',
   },
 ]
@@ -82,6 +82,12 @@ function CertificateModal({ certificate, onClose }) {
         {certificate.image ? (
           <div className="cert-modal-image-container">
             <img src={certificate.image} alt={`${certificate.title} preview`} className="cert-modal-image" />
+          </div>
+        ) : certificate.pdfUrl ? (
+          <div className="cert-modal-image-container">
+            <object data={certificate.pdfUrl} type="application/pdf" className="cert-modal-image" aria-label={`${certificate.title} PDF preview`}>
+              <p className="cert-modal-preview-label">PDF preview is not supported in this browser.</p>
+            </object>
           </div>
         ) : (
           <div className={`cert-modal-preview cert-accent-${certificate.accent}`}>
@@ -124,7 +130,7 @@ export default function Certificates() {
           <div className="section-head">
             <span className="ghost-word" aria-hidden="true">Proof</span>
             <span className="section-eyebrow">Recognition</span>
-            <h2 className="section-title">Certifications & awards</h2>
+            <h2 className="section-title">Certifications & professional training</h2>
           </div>
         </ScrollReveal>
 

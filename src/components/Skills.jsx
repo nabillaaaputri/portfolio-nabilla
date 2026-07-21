@@ -5,19 +5,23 @@ import './Skills.css'
 const SKILL_CATEGORIES = [
   {
     title: 'Frontend',
-    skills: ['HTML', 'CSS', 'JavaScript', 'React'],
+    skills: ['React.js', 'JavaScript', 'HTML', 'CSS', 'Tailwind CSS'],
   },
   {
     title: 'Backend',
-    skills: ['PHP', 'Node.js', 'Express'],
+    skills: ['Node.js', 'Express.js', 'REST API'],
   },
   {
     title: 'Database',
     skills: ['MySQL'],
   },
   {
+    title: 'AI / Data',
+    skills: ['Python'],
+  },
+  {
     title: 'Tools',
-    skills: ['Git', 'GitHub', 'VS Code', 'Figma'],
+    skills: ['Git', 'GitHub', 'Postman', 'Vercel'],
   },
 ]
 

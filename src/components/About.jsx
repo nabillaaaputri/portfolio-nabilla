@@ -2,10 +2,10 @@ import ScrollReveal from './ScrollReveal'
 import './About.css'
 
 const STATS = [
-  { value: '6+', label: 'Projects shipped' },
-  { value: '10+', label: 'Certificates' },
-  { value: '2+', label: 'Years Learning' },
-  { value: '7+', label: 'Technologies' },
+  { value: '6+', label: 'Projects Completed' },
+  { value: '12+', label: 'Technologies Used' },
+  { value: '2+', label: 'Team Collaborations' },
+  { value: '6+', label: 'Certifications' },
 ]
 
 export default function About() {
@@ -24,13 +24,13 @@ export default function About() {
           <ScrollReveal>
             <div className="about-text">
               <p>
-                I'm an Informatics student with a strong interest in web development and building responsive, user-friendly applications. I enjoy turning ideas into functional websites using modern technologies while continuously improving my technical and problem-solving skills.
+                I'm an Informatics student building my path as a software engineer, with experience developing web applications across frontend and backend layers. I enjoy turning ideas into functional digital products with a focus on clean implementation and maintainable code.
               </p>
               <p>
-                My journey started with HTML and CSS and has grown to include JavaScript, PHP, React, and MySQL through academic and personal projects. I'm currently learning Laravel and Node.js to expand my knowledge of full-stack web development and build more scalable applications.
+                My experience includes frontend development with React.js, backend development with Node.js and Express.js, REST API integration, database management, and AI-based features in academic and personal projects. I am comfortable contributing across the stack to connect interfaces, services, and data.
               </p>
               <p>
-                I am seeking a web developer internship opportunity to contribute to real-world projects while continuing to improve my skills in modern web development. Feel free to contact me via email or LinkedIn.
+                I am open to Frontend Developer, Web Developer, and Software Engineer internship opportunities where I can contribute to real-world product development while continuing to grow as a developer.
               </p>
             </div>
           </ScrollReveal>
